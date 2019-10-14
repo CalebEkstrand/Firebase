@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Scheduler</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+        <table style="width:100%">
+                <thead><tr>
+                  <th>Train Name</th>
+                  <th>Destination</th>
+                  <th>Frequency</th>
+                  <th>Next Arrival</th>
+                  <th>Minutes Away</th>
+                </tr></thead>
+               <tbody id="trainBody"></tbody>
+              </table>
+              <form>
+                  <h3>Train Name</h3>
+                  <input type="text" id="trainName">
+                  <h3>Destination</h3>
+                <input type="text" id="destination">
+                <h3>First train</h3>
+                <input type="time" id="firstTrain">
+                <h3>Frequency</h3>
+                <input type="number" id="frequency">
+                
+                
+                
+                
+                
+                
+                
+                <button type="submit" id="submitButton">Submit</button></form>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-database.js"></script>
+    <script src="./assets/game.js"></script>
+</body>
+
+</html>
